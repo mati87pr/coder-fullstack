@@ -1,0 +1,263 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    font-size: 25px;
+}
+
+.logo {
+    flex: 1; 
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#vehiculos {
+    margin-top: 80px;
+}
+
+#vehiculos .section-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#vehiculos p.text-muted {
+    font-size: 18px;
+}
+
+.car-container .section-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.car-container {
+    font-size: 18px;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.car {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.car img {
+    max-width: 50%;
+    height: 200;
+    border-radius: 5px;
+}
+
+#cars {
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+#cars .section-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#cars p.text-muted {
+    font-size: 18px;
+}
+
+.cars-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; 
+}
+
+.cars-container h4 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333; 
+}
+
+.cars-item {
+width: 30%; 
+margin-bottom: 30px;
+}
+
+.cars-item .cars-wrap {
+overflow: hidden;
+position: relative;
+border-radius: 6px;
+margin: 0;
+}
+
+.cars-item .cars-wrap img {
+width: 100%;
+height: auto;
+}
+
+.cars-item .cars-wrap:hover img {
+opacity: 0.4;
+transition: 0.3s;
+}
+
+.cars-item .cars-wrap:hover {
+background: #003166;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.cars-wrap:hover .overlay {
+    display: flex;
+}
+
+#about-us {
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+#about-us .section-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#about-us p.text-muted {
+    font-size: 18px;
+}
+
+.team-member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around; 
+}
+
+.team-member img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    border: 5px solid #fff; 
+}
+
+.team-member h4 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.team-member p.text-muted {
+    font-size: 16px;
+    color: #777; 
+}
+
+#postventa {
+    margin-top: 80px;
+    padding: 20px;
+    background-image: url("../img/taller.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#postventa .section-heading {
+    font-size: 30px;
+}
+
+#postventa p.text-muted {
+    font-size: 18px;
+}
+
+.pv-container {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+#contacto {
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+#contacto .section-header {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-container {
+    display: grid;
+    justify-content:space-around; 
+}
+
+footer {
+    background-color: #333;
+    color: rgb(128, 128, 128);
+    padding: 10px 20px;
+    text-align: center;
+}
